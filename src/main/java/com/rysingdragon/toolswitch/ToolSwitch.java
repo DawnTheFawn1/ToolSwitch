@@ -90,7 +90,6 @@ public class ToolSwitch {
             ItemStack efficientStack = efficientSlot.peek().get();
             EfficiencyProperty efficientStackProperty = efficientStack.getProperty(EfficiencyProperty.class).get();
             EfficiencyProperty property = stack.getProperty(EfficiencyProperty.class).get();
-            System.out.println("vl: " + property.getValue());
             if (property.getValue() != null && efficientStackProperty.getValue() != null && property.getValue() > efficientStackProperty.getValue()) {
                 efficientSlot = slot;
             }
